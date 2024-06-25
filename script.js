@@ -38,7 +38,9 @@ function showGame(){
     footer.style.display = 'inline-block'
     header.style.margin = 'auto 0 50px 0';
     playerSec.style.marginBottom = '30px';
+    playerSec.children[0].style.backgroundColor = '#222222';
 }
+
 
 // <-- get player name -->
 function getPlayerName(e){
@@ -48,6 +50,16 @@ function getPlayerName(e){
     }
 }
 
+// <-- show Turn of player using color of player Card -->
+function showTurn(e){
+    if(e.target.innerText == 'X'){
+        playerSec.children[0].style.backgroundColor = '#191919';
+        playerSec.children[2].style.backgroundColor = '#222222';
+    }else{
+        playerSec.children[0].style.backgroundColor = '#222222';
+        playerSec.children[2].style.backgroundColor = '#191919';
+    }
+}
 // <-- insert the 'X' or 'O' in boxes --> 
 function insertSymbol(e){
     counter = counter + 1;
@@ -202,6 +214,7 @@ playerName.forEach( (elem)=>{
 function eventBundler(e){
     insertSymbol(e);
     verifyWin(e);
+    showTurn(e);
 }   
 
 // <-- event listner for user symbol (X, O) input -->
