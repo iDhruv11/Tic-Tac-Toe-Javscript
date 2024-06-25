@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: #151515;
+    height: 100vh;
+    width: 100vw;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    margin-top: auto;
+    font-family: 'Nunito';
+    font-size: 3rem;
+    color: white;
+}
+.by-me{
+    font-family: 'Nunito';
+    color: white;
+}
+.start{
+    padding: 13px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border-radius: 12px;
+    background-color: #1f1f1f;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: all .5s ease-out;
+}
+.play-icon{
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+.start:hover{
+    background-color: #242424;
+    transform: scale(1.06);
+}
+.player-section{
+    width: 420px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.player-card{
+    width: 130px;
+    background-color: #191919;
+    border-radius: 12px;
+    text-align: center;
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.player-title{
+    font-family: 'Nunito';
+    font-size: .8rem;    
+}
+.player-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    width: 110px;
+    border-radius: 8px;
+    padding: 3px 0px;
+    background-color: #1f1f1f;
+    font-weight: bold;
+}
+.versus{
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.hero{
+    background-color: #191919;
+    width: 450px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 17px;
+}
+.input-box{
+    width: 125px;
+    height: 125px;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Nunito';
+    
+}
+footer{
+    font-family: 'Nunito';
+    color: white;
+    word-spacing: 2px;
+    font-size: .9rem;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+a{
+    color: #808080;
+    text-decoration: none;
+}
+.winner-box{
+    width: 480px;
+    background-color: #080808;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Nunito';
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0px;
+    opacity: calc(70%);
+    position: absolute;
+    transform: translate(0%, 100%);
+    display: none;
+    transition: opacity 1s linear;
+}
+.winner-title{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.restart{
+    width: 120px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 25px;
+    background-color: #1f1f1f;
+    font-size: 1.2rem;
+    display: flex;
+    opacity: calc(150%);
+    transition: all .2s ease-in;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.restart:hover{
+    transform: scale(1.06);
+    opacity: calc(100%);
+}
